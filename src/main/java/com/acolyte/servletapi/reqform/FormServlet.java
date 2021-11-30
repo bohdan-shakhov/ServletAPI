@@ -6,8 +6,13 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name = "FormServlet", value = "/FormServlet")
+@WebServlet("/FormServlet")
 public class FormServlet extends HttpServlet {
+    @Override
+    public void init() throws ServletException {
+        System.out.println("FormServlet#init");
+    }
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html;charset=utf-8");
