@@ -1,13 +1,12 @@
 package com.acolyte.servletapi;
 
 import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 import java.io.PrintWriter;
 
 @WebServlet("/FirstServlet")
-public class FirstServlet extends HttpServlet {
+public class FirstServlet implements Servlet {
     ServletConfig config = null;
 
     @Override
