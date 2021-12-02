@@ -17,7 +17,8 @@ public class AttributeServlet2 extends HttpServlet {
         String servlet1 = (String) context.getAttribute("1-servlet");
 
         out.print("<center><h2>Welcome to second servlet</h2>");
-        out.print("You were redirected from: " + servlet1 + "</center>");
+        out.print("You were redirected from: " + servlet1 + "<br>");
+        out.print("<a href='index.html'>Back to start page</a></center>");
     }
 
     @Override

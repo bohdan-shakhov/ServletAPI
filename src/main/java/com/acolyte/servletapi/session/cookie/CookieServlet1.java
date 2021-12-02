@@ -19,14 +19,14 @@ public class CookieServlet1 extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         String userName = request.getParameter("userName");
-        out.print("<>Welcome " + userName + "!!!</center>");
+        out.print("<center>Welcome <b>" + userName + "</b>!!!");
 
         Cookie cookie = new Cookie("uname", userName);
         response.addCookie(cookie);
 
         out.print("<form action='CookieServlet2'>");
         out.print("<input type='submit' value='go to next servlet'>");
-        out.print("</form>");
+        out.print("</form></center>");
 
         out.close();
     }

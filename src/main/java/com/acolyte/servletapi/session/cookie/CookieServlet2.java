@@ -19,7 +19,8 @@ public class CookieServlet2 extends HttpServlet {
         PrintWriter out = response.getWriter();
 
         Cookie[] cookies = request.getCookies();
-        out.print("Hello " + cookies[0].getValue() + " from another servlet");
+        out.print("<center>Hello <b>" + cookies[0].getValue() + "</b> from another servlet<br>");
+        out.print("<a href='index.html'>Back to start page</a></center>");
 
         out.close();
     }

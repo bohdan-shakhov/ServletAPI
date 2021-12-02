@@ -22,7 +22,7 @@ public class WelcomeServlet extends HttpServlet {
         String userName = request.getParameter("userName");
 
         out.print("<h2>Welcome " + userName + "</h2>");
-        out.print("<a href='dispatcher.html'>Back to login form</a>");
+        out.print("<a href='dispatcher/dispatcher.html'>Back to login form</a>");
 
     }
 }

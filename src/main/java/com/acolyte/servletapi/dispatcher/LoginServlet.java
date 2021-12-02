@@ -27,7 +27,7 @@ public class LoginServlet extends HttpServlet {
             dispatcher.forward(request, response);
         } else {
             out.print("<h3 style=\"color: red\">Sorry user name is incorrect!</h3>");
-            out.print("<a href='dispatcher.html'>Back to login form</a>");
+            out.print("<a href='dispatcher/dispatcher.html'>Back to login form</a>");
         }
     }
 }
