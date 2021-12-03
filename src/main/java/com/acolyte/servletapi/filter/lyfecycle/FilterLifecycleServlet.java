@@ -13,7 +13,8 @@ public class FilterLifecycleServlet extends HttpServlet {
         response.setContentType("text/html;chaset=utf-8");
         PrintWriter out = response.getWriter();
 
-        out.print("<center><h2>Welcome to servlet</h2></center>");
+        out.print("<center><h2>Welcome to servlet</h2>");
+        out.print("<br><a href='index.html'>Back to main page</a><center>");
     }
 
     @Override
